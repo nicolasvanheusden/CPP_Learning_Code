@@ -1,13 +1,29 @@
 #include <iostream>
+#include <vector>
 
-int main()
-{
-    int array[] = { 0, 1, 2, 3 };
+using namespace std;
 
-    for (int i = 0; i < 4; ++i)
+int main(int argc, char** argv) {
+
+    if (argc <= 1)
     {
-        std::cout << array[i] << std::endl;
+        cerr << "Merci d'indiquer un nombre en paramètre" << endl;
+        return -1;
     }
+    int length = stoi(argv[1]);
+    if (length <= 0)
+    {
+        cerr << "Merci d'indiquer un PUTAIN DE NOMBRE" << endl;
+        return -1;
+    }
+
+    vector<int> array;
+
+    for (int i = 0; i < length; i++)
+    { array.emplace_back(i + 1); }
+
+    for (int i = 0; i < length; i++)
+    { cout << array[i] << endl; }
 
     return 0;
 }
