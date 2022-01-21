@@ -23,15 +23,15 @@ AlwaysBreakTemplateDeclarations: Yes
 
 BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterClass: true
-  AfterEnum: true
+  AfterClass: false
+  AfterEnum: false
   AfterFunction: false
-  AfterStruct: true
-  AfterControlStatement: Always
-  BeforeCatch: true
-  BeforeElse: true
-  BeforeWhile: true
-  BeforeLambdaBody: true
+  AfterStruct: false
+  AfterControlStatement: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeWhile: false
+  BeforeLambdaBody: false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
 
