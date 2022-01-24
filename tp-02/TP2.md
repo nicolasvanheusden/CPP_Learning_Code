@@ -32,8 +32,9 @@ int main() {
   return 0;
 }
 ```
-
+17 est affiché
 2. Que se passe si on enlève la ligne marquée "initialisation" ?
+On a une compilation error.
 
 ## Exercice 2 - Construction et destruction
 
@@ -65,10 +66,6 @@ Histogram h3{Histogram{h1}};
 ```
 
 3. Si on enlève la définition du constructeur de copie, est-ce que le code ci-dessus compile toujours ? Si oui, que va-t-il se passer au moment de l'exécution ?
-
-[//]: # (## Exercise 3 - Construction et Affectation)
-[//]: # (1. Informez-vous et expliquez les trois concepts "Rule of Zero/Three/Five"!)
-[//]: # (2. Informez-vous et expliquez le concept "Copy-And-Swap"!)
 
 ## Exercice 3 - Rappels d'événements !
 
