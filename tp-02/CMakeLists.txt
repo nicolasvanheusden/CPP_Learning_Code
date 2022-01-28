@@ -12,8 +12,3 @@ add_executable(histogram
     histogram.cpp
 )
 
-add_executable(minute 
-
-    Event.h
-    minute_hand.cpp
-)

@@ -13,8 +13,8 @@ public:
         : _notif_time { notif_time }
         , _message { message } {}
 
-    bool notify_time(unsigned int current_min, unsigned int current_sec) const {
-        if (_notif_time.first == current_min && current_sec == _notif_time.second) {
+    bool notify_time(int current_min, int current_sec) const {
+        if (current_min == _notif_time.first && current_sec == _notif_time.second) {
             std::cout << _message << std::endl;
             return true;
         }

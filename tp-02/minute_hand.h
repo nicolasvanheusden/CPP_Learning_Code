@@ -55,14 +55,3 @@ private:
 std::ostream& operator<<(std::ostream& stream, const Clock& clock) {
     return stream << clock.getMinutes() << " min " << clock.getSeconds() << " sec " << std::endl;
 }
-
-int main(void) {
-
-    Clock clock;
-
-    for (int i = 0; i <= 63; i++) {
-        clock.tick();
-    }
-
-    std::cout << clock << std::endl;
-}
